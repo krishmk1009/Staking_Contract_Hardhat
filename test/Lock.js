@@ -15,9 +15,11 @@ describe("ERC20", function () {
   });
 
   it("should have correct initial values", async function () {
-    expect(await erc20.name()).to.equal("Solidity by Example");
-    expect(await erc20.symbol()).to.equal("SOLBYEX");
+    expect(await erc20.name()).to.equal("MKrushna");
+    expect(await erc20.symbol()).to.equal("MK");
     expect(await erc20.decimals()).to.equal(18);
+    expect(await erc20.getName()).to.equal("MKrushna")
+    expect(await erc20.getSymbol()).to.equal("MK")
   });
 
   it("should mint tokens", async function () {
@@ -63,3 +65,4 @@ describe("ERC20", function () {
     expect(await erc20.stackedBalance(alice.address)).to.equal(10);
   });
 });
+//0x73958c4625217C1CD2Dc09433A77d9cA900F341A

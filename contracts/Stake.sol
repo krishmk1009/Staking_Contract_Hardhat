@@ -3,11 +3,11 @@ pragma solidity ^0.8.15;
 
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
-contract Staking is ERC20 {
+contract Stake is ERC20 {
     mapping (address => uint256) public staked;
     mapping (address => uint256) public stakedFromTs;
 
-    constructor() ERC20("Fixed Staking", "Fix") {
+    constructor() ERC20("Token", "TK") {
         _mint(msg.sender, 100000);
     }
 
